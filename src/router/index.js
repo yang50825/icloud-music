@@ -3,9 +3,10 @@ import VueRouter from 'vue-router'
 
 // 引入组件
 // 一级路由
+import FindMusic from '../views/FindMusic.vue'
 import Attention from '../views/Attention.vue'
 import Download from '../views/Download.vue'
-import FindMusic from '../views/FindMusic.vue'
+import SubNav from '../views/SubNav.vue'
 import MyMusic from '../views/MyMusic.vue'
 import Musician from '../views/Musician.vue'
 import Store from '../views/Store.vue'
@@ -23,12 +24,12 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      redirect: '/findMusic/Recommend',
+      redirect: '/subNav/Recommend',
     },
     {
-      path: '/findMusic',
-      name: 'FindMusic',
-      component: FindMusic,
+      path: '/subNav',
+      name: 'SubNav',
+      component: SubNav,
       children: [
         {
           path: 'recommend',

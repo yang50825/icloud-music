@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       nav: [
-        { title: '发现音乐', url: '/findMusic' },
+        { title: '发现音乐', url: '/subNav' },
         { title: '我的音乐', url: '/myMusic' },
         { title: '关注', url: '/attention' },
         { title: '商城', url: '/store' },
