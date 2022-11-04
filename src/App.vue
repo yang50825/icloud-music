@@ -1,28 +1,49 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <TopBar></TopBar>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TopBar from './components/TopBar'
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+    name: 'App',
+    components: {
+        TopBar
+    }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-</style>
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+body, textarea, select, input, button {
+    font-size: 14px;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+// 版心
+.wrapper {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.m-subnav {
+    height: 5px;
+    background-color: #C20C0C;
+}
+</style>></style>
